@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  root: 'src', // 🔥 IMPORTANTE: aponta para o diretório onde está o index.html
+  root: 'src', // 👈 ESSENCIAL
   plugins: [react()],
   build: {
-    outDir: '../dist',   // 🔥 Saída da build fora de src
-    emptyOutDir: true,
+    outDir: '../dist',
+    emptyOutDir: true
   },
   resolve: {
     alias: {
